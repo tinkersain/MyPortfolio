@@ -80,6 +80,15 @@ export const Skills = () => {
                   />
                   <h5>Graphics Design</h5>
                 </div>
+                <div className="item">
+                  <img
+                    src={
+                      "      https://cdn-icons-png.flaticon.com/512/1183/1183618.png  "
+                    }
+                    alt="Image"
+                  />
+                  <h5>JAVA</h5>
+                </div>
               </Carousel>
             </div>
           </div>
