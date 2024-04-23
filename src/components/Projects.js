@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/proj3.png";
 import projImg4 from "../assets/img/projImg4.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
+import "./all.css";
 import TrackVisibility from "react-on-screen";
 import Resume from "./Resume";
 
@@ -14,18 +15,22 @@ export const Projects = () => {
     {
       description: "Portfolio",
       imgUrl: projImg1,
+      href: "https://github.com/tinkersain/MyPortfolio",
     },
     {
       description: "TO-DO App",
       imgUrl: projImg2,
+      href: "https://github.com/tinkersain/myfirstreactproject",
     },
     {
       description: "Vehicle Detection",
       imgUrl: projImg3,
+      href: "https://github.com/tinkersain/VehicleDetection",
     },
     {
       description: "Railway Rakes Scheduler",
       imgUrl: projImg4,
+      href: "https://github.com/Abhinav-2004/SIH-React-Railways",
     },
   ];
 
@@ -69,11 +74,15 @@ export const Projects = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <Row>
+                        <div className="project-flex">
                           {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                            return (
+                              <a href={project.href}>
+                                <ProjectCard key={index} {...project} />
+                              </a>
+                            );
                           })}
-                        </Row>
+                        </div>
                       </Tab.Pane>
                       {/* <Tab.Pane eventKey="second">
                         <Resume />
