@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/proj1.png";
 import projImg2 from "../assets/img/proj2.png";
 import projImg3 from "../assets/img/proj3.png";
+import projImg4 from "../assets/img/projImg4.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -21,6 +22,10 @@ export const Projects = () => {
     {
       description: "Vehicle Detection",
       imgUrl: projImg3,
+    },
+    {
+      description: "Railway Rakes Scheduler",
+      imgUrl: projImg4,
     },
   ];
 
