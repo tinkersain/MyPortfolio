@@ -23,7 +23,7 @@ export const Projects = () => {
       href: "https://github.com/tinkersain/myfirstreactproject",
     },
     {
-      description: "Vehicle Detection",
+      description: "Traffic Optimizer",
       imgUrl: projImg3,
       href: "https://github.com/tinkersain/VehicleDetection",
     },

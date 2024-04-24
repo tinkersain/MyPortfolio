@@ -75,14 +75,17 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    My fullname is Tanisha Kar. I'm 19 years old. I am a
-                    front-end web developer. I can make the website more
-                    interactive with web animation I study at Silicon
-                    University. When I first came here, I had no knowledge of
-                    programming. But now with the help of strong aspirations and
-                    teachers, my level of knowledge has greatly increased and I
-                    can freely create web site views that are used in our daily
-                    lives.
+                    I am Tanisha Kar, a 19-year-old front-end web developer
+                    enrolled at Silicon University. When I first embarked on my
+                    educational journey, I lacked any programming knowledge.
+                    However, through my steadfast determination and the
+                    invaluable mentorship of my teachers, my proficiency has
+                    significantly advanced. I can now proficiently design
+                    captivating website interfaces that incorporate dynamic web
+                    animations, enriching user engagement and experience. This
+                    newfound expertise empowers me to create web solutions that
+                    are not only functional but also visually appealing and
+                    influential in our everyday interactions.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
