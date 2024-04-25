@@ -4,6 +4,9 @@ import projImg1 from "../assets/img/proj1.png";
 import projImg2 from "../assets/img/proj2.png";
 import projImg3 from "../assets/img/proj3.png";
 import projImg4 from "../assets/img/projImg4.png";
+import Python from "../assets/img/python.png";
+import SIH from "../assets/img/sih.jpg";
+import Trident from "../assets/img/trident.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import "./all.css";
@@ -33,7 +36,20 @@ export const Projects = () => {
       href: "https://github.com/Abhinav-2004/SIH-React-Railways",
     },
   ];
-
+  const certificates = [
+    {
+      description: "Python Internship",
+      imgUrl: Python,
+    },
+    {
+      description: "SIH Internal Hackathon Winner",
+      imgUrl: SIH,
+    },
+    {
+      description: "Trithon Hackathon 1st Runners up",
+      imgUrl: Trident,
+    },
+  ];
   return (
     <section className="project" id="projects">
       <Container>
@@ -64,7 +80,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">RESUME</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">BIO</Nav.Link>
+                        <Nav.Link eventKey="third">CERTIFICATES</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -89,15 +105,17 @@ export const Projects = () => {
                           <Resume />
                         </div>
                       </Tab.Pane>
-                      {/*<Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane> */}
+                      <Tab.Pane eventKey="third">
+                        <div className="project-flex">
+                          {certificates.map((project, index) => {
+                            return (
+                              <a href={project.href}>
+                                <ProjectCard key={index} {...project} />
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
                 </div>
