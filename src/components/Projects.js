@@ -84,10 +84,12 @@ export const Projects = () => {
                           })}
                         </div>
                       </Tab.Pane>
-                      {/* <Tab.Pane eventKey="second">
-                        <Resume />
+                      <Tab.Pane eventKey="second">
+                        <div className="resume-container">
+                          <Resume />
+                        </div>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third">
+                      {/*<Tab.Pane eventKey="third">
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem

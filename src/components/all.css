@@ -12,3 +12,18 @@
   background-color: rgb(203, 161, 241);
   border-radius: 10px;
 }
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-container iframe {
+  width: 100%;
+}
+
+@media (min-width: 767px) {
+  .resume-container iframe {
+    width: 640px;
+  }
+}
