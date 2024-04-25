@@ -5,6 +5,7 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
+import githubicon from "../assets/img/github-icon.svg";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
@@ -78,6 +79,9 @@ export const NavBar = () => {
                   target="_blank"
                 >
                   <img src={navIcon1} alt="" />
+                </a>
+                <a href="https://www.github.com/tinkersain" target="_blank">
+                  <img src={githubicon} alt="Icon" />
                 </a>
                 {/* <a href="#">
                   <img src={navIcon2} alt="" />
