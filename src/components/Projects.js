@@ -7,6 +7,7 @@ import projImg4 from "../assets/img/projImg4.png";
 import Python from "../assets/img/python.png";
 import SIH from "../assets/img/sih.jpg";
 import Trident from "../assets/img/trident.png";
+import TEDX from "../assets/img/tedx.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import "./all.css";
@@ -48,6 +49,10 @@ export const Projects = () => {
     {
       description: "Trithon Hackathon 1st Runners up",
       imgUrl: Trident,
+    },
+    {
+      description: "TEDXSITB participation",
+      imgUrl: TEDX,
     },
   ];
   return (
